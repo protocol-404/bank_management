@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS SavingsAccounts (
     interestRate FLOAT,
   FOREIGN KEY (accountId) REFERENCES Accounts(accountID)
 );
+
 CREATE TABLE IF NOT EXISTS CurrentAccounts (
   id INT AUTO_INCREMENT PRIMARY KEY,
   accountId INT,
